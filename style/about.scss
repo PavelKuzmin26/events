@@ -1,0 +1,30 @@
+.about {
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    .image {
+      flex: 1 1 45rem;
+      padding: 1rem;
+      img {
+        width: 100%;
+        border-radius: 0.5rem;
+        border: 1rem solid #333;
+      }
+    }
+    .content {
+      flex: 1 1 45rem;
+      h3 {
+        font-size: 3.5rem;
+        color: #fff;
+      }
+      p {
+        font-size: 1.5rem;
+        color: #eee;
+        padding: 1rem 0;
+        line-height: 2;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.price {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    .box {
+      padding: 2rem 0;
+      background: #333;
+      border-radius: 0.5rem;
+      text-align: center;
+      &:hover {
+        transform: scale(1.03);
+      }
+      .title {
+        background: var(--main-color);
+        color: #fff;
+        padding: 1.5rem 0;
+        font-size: 2rem;
+      }
+      .amount {
+        color: #fff;
+        padding-top: 2rem;
+        font-size: 4rem;
+      }
+      ul {
+        padding: 1rem 0;
+        li {
+          font-size: 1.5rem;
+          color: #eee;
+          padding: 1rem 0;
+          i {
+            color: var(--main-color);
+            padding-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

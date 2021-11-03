@@ -1,0 +1,119 @@
+:root {
+  --main-color: #3867d6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #444;
+}
+html::-webkit-slider-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+body {
+  background: #222;
+}
+section {
+  padding: 2rem 9%;
+}
+#menu-bars {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  background: #666;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  &:hover {
+    background: var(--main-color);
+  }
+}
+ul {
+  list-style: none;
+}
+.heading {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+  span {
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+}
+.theme-toggler {
+  position: fixed;
+  top: 10rem;
+  right: -15rem;
+  background: #333;
+  z-index: 1000;
+  width: 20rem;
+  text-align: center;
+  &.active {
+    right: 0;
+  }
+  .toggle-btn {
+    position: absolute;
+    top: 0;
+    left: -5.9rem;
+    padding: 1.3rem 1.5rem;
+    background: #333;
+    cursor: pointer;
+    i {
+      color: #fff;
+      font-size: 3rem;
+      animation: spin 4s linear infinite;
+    }
+  }
+  h3 {
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    .theme-btn {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+}
